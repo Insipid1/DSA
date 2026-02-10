@@ -13,6 +13,7 @@ It checks whether the popped opening bracket matches the closing bracket.
 If a closing bracket appears when the stack is empty, or if brackets do not match, the expression is not balanced.
 
 After scanning the entire expression, if the stack is empty, the expression is balanced; otherwise, it is not balanced.
+
 **MAJOR FUNCTIONS:**
 ```c
 push(char c);
