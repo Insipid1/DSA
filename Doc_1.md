@@ -1,40 +1,66 @@
-# Checking if the parenthesis is balanced or Not.
-This program checks whether a given expression has balanced parentheses using a stack. 
-**DO NOTE THAT : Any other brackets haven't been included as question said only to balance parenthesises.**
-## How it works
-When an opening bracket ( is encountered, it is pushed onto the stack.
+# Balanced Parentheses Checker (Using Stack)
 
-When a closing bracket ) is encountered:
+## (a) Data Structure Definition
 
-The program pops the top element from the stack.
+This program uses a **stack** data structure implemented using an array to store opening brackets.
 
-It checks whether the popped opening bracket matches the closing bracket.
+- `char stack[MAX]`  
+  Stores opening brackets `(`
 
-If a closing bracket appears when the stack is empty, or if brackets do not match, the expression is not balanced.
+- `int top`  
+  Tracks the index of the top element in the stack.  
+  A value of `-1` indicates that the stack is empty.
 
-After scanning the entire expression, if the stack is empty, the expression is balanced; otherwise, it is not balanced.
+The stack follows the **Last In, First Out (LIFO)** principle, which is suitable for checking balanced parentheses.
 
-**MAJOR FUNCTIONS:**
+---
+
+## (b) Function Descriptions
+
+- **`push(char c)`**  
+  Pushes an opening bracket onto the stack.
+
+- **`pop()`**  
+  Removes and returns the top element from the stack.
+
+- **`isEmpty()`**  
+  Checks whether the stack is empty.
+
+- **`isOpen(char c)`**  
+  Determines whether a character is an opening bracket.
+
+- **`isClose(char c)`**  
+  Determines whether a character is a closing bracket.
+
+- **`isMatch(char open, char close)`**  
+  Checks whether the opening and closing brackets match correctly.
+
+- **`checkBalanced(const char *expr)`**  
+  Scans the expression character by character, uses the stack to match brackets, and returns whether the expression is balanced.
+
+- **`test(const char *expr)`**  
+  Displays the expression and prints the result of the balance check.
+
+---
+
+## (c) Organization of the `main()` Function
+
+The `main()` function:
+1. Prints the program title.
+2. Calls the `test()` function with multiple test expressions.
+3. Displays the result for each test case.
+
+This structure keeps the program modular and easy to understand.
+
+---
+
+## (d) Sample Output
+
 ```c
-push(char c);
-pop();
-isOpen(char c);
-isClosed(char c);
-isMatch(char open, char close);
-checkBalancedorNo(const char *expr);
+Expression: a + (b - c) * (d + e)
+  Push '('  → Stack: [(]
+  Pop  '(' matched ')' → Stack: []
+  Push '('  → Stack: [(]
+  Pop  '(' matched ')' → Stack: []
+Result:   BALANCED
 ```
-## Features
-
-Uses a character stack implemented with an array
-
-Only Supports ()
-
-Displays push and pop operations for better understanding
-
-
-## Output
-
- BALANCED → all Parenthesis are properly matched
-
- NOT BALANCED → missing or mismatched parenthesis
-
