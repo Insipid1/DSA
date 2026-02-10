@@ -2,7 +2,7 @@
 
 ## (a) Data Structure Definition
 
-This program uses a **stack** data structure implemented using an array to store opening brackets.
+This program uses a **stack** data structure implemented using an array to store opening brackets.Only parenthesis are being checked, not [] or {}.
 
 - `char stack[MAX]`  
   Stores opening brackets `(`
