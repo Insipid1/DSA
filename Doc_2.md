@@ -58,14 +58,6 @@ For Operands.
 ### 3. `int Bodmas(char c)`
 
 * **Purpose:** Returns the precedence level of an operator.
-* Higher number means higher priority:
-
-  * `^` → 3
-  * `*`, `/` → 2
-  * `+`, `-` → 1
-  * Others → 0
-
-This function helps maintain correct order of operations during conversion.
 
 ---
 
@@ -92,17 +84,6 @@ Working:
 ### 5. `int evaluatePostfix(char postfix[])`
 
 **Purpose:** Evaluates the postfix expression and returns the result.
-
-Working:
-
-1. Scan postfix expression from left to right.
-2. If the character is a digit → push onto integer stack.
-3. If it is an operator:
-
-   * Pop two operands (`op2` and `op1`).
-   * Apply the operator: `op1 operator op2`.
-   * Push the result back onto the stack.
-4. After completion, the final result remains on the stack and is returned.
 
 ---
 
