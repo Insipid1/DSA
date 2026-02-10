@@ -4,7 +4,7 @@ This document explains the design and working of the C program that converts an 
 
 ---
 
-## (a) Definition of Data Structures
+##  Definition of Data Structures
 
 The program uses two **stack data structures implemented using arrays**:
 
@@ -18,7 +18,7 @@ For Operands.
 
 ## Functions
 
-### 1. Stack Operations for Character Stack
+###  Stack Operations for Character Stack
 
 #### `void push_char(char c)`
 
@@ -42,7 +42,7 @@ For Operands.
 
 ---
 
-### 2. Stack Operations for Integer Stack
+###  Stack Operations for Integer Stack
 
 #### `void push_int(int x)`
 
@@ -55,13 +55,13 @@ For Operands.
 
 ---
 
-### 3. `int Bodmas(char c)`
+###  `int Bodmas(char c)`
 
 * **Purpose:** Returns the precedence level of an operator.
 
 ---
 
-### 4. `void infixToPostfix(char infix[], char postfix[])`
+###  `void infixToPostfix(char infix[], char postfix[])`
 
 **Purpose:** Converts an infix expression to postfix notation.
 
@@ -81,13 +81,13 @@ Working:
 
 ---
 
-### 5. `int evaluatePostfix(char postfix[])`
+### `int evaluatePostfix(char postfix[])`
 
 **Purpose:** Evaluates the postfix expression and returns the result.
 
 ---
 
-## (c) Organization of `main()` Function
+##  Organization of `main()` Function
 
 The `main()` function is structured as follows:
 

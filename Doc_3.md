@@ -4,7 +4,7 @@ This document explains a **simple C program** that performs **reverse traversal 
 
 ---
 
-## (a) Definition of Data Structures
+##  Definition of Data Structures
 
 ### Linked List Node
 
@@ -20,7 +20,7 @@ struct Node {
 
 ---
 
-## (b) Description of Functions Implemented
+## Description of Functions Implemented
 
 ### 1. `struct Node* createNode(int data)`
 
@@ -54,7 +54,7 @@ Explanation:
 
 ---
 
-## (c) Organization of `main()` Function
+##  Organization of `main()` Function
 
 The `main()` function performs the following steps:
 

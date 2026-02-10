@@ -34,7 +34,7 @@ struct Node* head = NULL;
 
 ---
 
-## (b) Description of Functions Implemented
+##  Description of Functions Implemented
 
 ### 1. `struct Node* createNode(int data)`
 
@@ -92,7 +92,7 @@ Working:
 
 ---
 
-## (c) Organization of `main()` Function
+## Organization of `main()` Function
 
 The `main()` function performs the following steps:
 
@@ -108,7 +108,7 @@ This clearly demonstrates both insertion and deletion operations.
 
 ---
 
-## (d) Sample Output of a Complete Run
+##  Sample Output of a Complete Run
 
 ```
 Original list:
