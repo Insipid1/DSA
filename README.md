@@ -1,6 +1,6 @@
-#Programming Assignments
+# Programming Assignments
 This repo has been created for completing **Assignment-2** of DSA(COMP-202) And will contain following programs and their repesctive readme files.
-The following are the programming questions:
+## The following are the programming questions:
 1. Write a program to check if any given mathematical expression ha balanced number of
 parentheses or not?
 Run the program by testing following expression-
