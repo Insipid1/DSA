@@ -7,38 +7,30 @@ A complete binary tree where each parent node is smaller than its children. The 
 ### Max-Heap:
 A complete binary tree where each parent node is larger than its children. The largest element is at the root.
 
-For a node at index i:
-
-Left child = 2*i + 1
-
-Right child = 2*i + 2
-
-Parent = (i-1)/2
-
 ## Functions Implemented
 
-### swap(int *a, int *b)
+### 1.swap(int *a, int *b)
 
 Purpose: Swap two integers in the array.
 
-### maxHeapify(int arr[], int n, int i)
+### 2.maxHeapify(int arr[], int n, int i)
 
 Purpose: Ensures subtree rooted at i satisfies max-heap property.
 
-### minHeapify(int arr[], int n, int i)
+### 3. minHeapify(int arr[], int n, int i)
 
 Purpose: Ensures subtree rooted at i satisfies min-heap property.
 
-## buildMaxHeap(int arr[], int n)
+## 4.buildMaxHeap(int arr[], int n)
 
 Purpose: Converts an unsorted array into a max-heap.
 
-## buildMinHeap(int arr[], int n)
+## 5. buildMinHeap(int arr[], int n)
 
 Purpose: Converts an unsorted array into a min-heap.
 
 
-## printArray(int arr[], int n)
+### 6. printArray(int arr[], int n)
 
 Purpose: Prints array elements in order.
 
