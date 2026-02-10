@@ -81,7 +81,6 @@ int checkBalancedorNot(const char *expr)
 void test(const char *expr)
 {
     printf("\nExpression: %s\n", expr);
-    printf("─────────────────────────────────────\n");
     if (checkBalancedorNot(expr))
         printf("Result:   BALANCED\n");
     else
