@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include<math.h>
+#include <ctype.h> // Yesma vako isNum func le Integer ho ki nai herdincha
 #define MAX 100
 
 char stack[MAX];
